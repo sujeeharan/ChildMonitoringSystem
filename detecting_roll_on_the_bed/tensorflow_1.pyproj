@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8656a5df-350b-4e62-9e7f-190dd5b288c2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>alternativchilddetect.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>tensorflow_1</Name>
+    <RootNamespace>tensorflow_1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="alternativchilddetect.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="childdetect.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="child_moving_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="object_detection_tutorial.py" />
+    <Compile Include="tensorflow_1.py" />
+    <Compile Include="utils\category_util.py" />
+    <Compile Include="utils\category_util_test.py" />
+    <Compile Include="utils\dataset_util.py" />
+    <Compile Include="utils\dataset_util_test.py" />
+    <Compile Include="utils\label_map_util.py" />
+    <Compile Include="utils\label_map_util_test.py" />
+    <Compile Include="utils\learning_schedules.py" />
+    <Compile Include="utils\learning_schedules_test.py" />
+    <Compile Include="utils\metrics.py" />
+    <Compile Include="utils\metrics_test.py" />
+    <Compile Include="utils\np_box_list.py" />
+    <Compile Include="utils\np_box_list_ops.py" />
+    <Compile Include="utils\np_box_list_ops_test.py" />
+    <Compile Include="utils\np_box_list_test.py" />
+    <Compile Include="utils\np_box_ops.py" />
+    <Compile Include="utils\np_box_ops_test.py" />
+    <Compile Include="utils\object_detection_evaluation.py" />
+    <Compile Include="utils\object_detection_evaluation_test.py" />
+    <Compile Include="utils\ops.py" />
+    <Compile Include="utils\ops_test.py" />
+    <Compile Include="utils\per_image_evaluation.py" />
+    <Compile Include="utils\per_image_evaluation_test.py" />
+    <Compile Include="utils\shape_utils.py" />
+    <Compile Include="utils\shape_utils_test.py" />
+    <Compile Include="utils\static_shape.py" />
+    <Compile Include="utils\static_shape_test.py" />
+    <Compile Include="utils\test_utils.py" />
+    <Compile Include="utils\test_utils_test.py" />
+    <Compile Include="utils\variables_helper.py" />
+    <Compile Include="utils\variables_helper_test.py" />
+    <Compile Include="utils\visualization_utils.py" />
+    <Compile Include="utils\visualization_utils_test.py" />
+    <Compile Include="utils\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="utils\" />
+    <Folder Include="utils\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="utils\BUILD" />
+    <Content Include="utils\__pycache__\label_map_util.cpython-36.pyc" />
+    <Content Include="utils\__pycache__\visualization_utils.cpython-36.pyc" />
+    <Content Include="utils\__pycache__\__init__.cpython-36.pyc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

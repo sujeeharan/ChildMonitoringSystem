@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>2659b7fb-2900-41d8-8f0a-cd9f72e1e1f2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Baby_Monitoring_System.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Baby Monitoring System</Name>
+    <RootNamespace>Baby Monitoring System</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Baby_Monitoring_System.py" />
+    <Compile Include="CribMode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="crib_mode\detect_crib.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="crib_mode\utilSujee.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="detecting_roll_on_the_bed\alternativchilddetect.py" />
+    <Compile Include="detecting_roll_on_the_bed\anchor_generators\grid_anchor_generator.py" />
+    <Compile Include="detecting_roll_on_the_bed\anchor_generators\grid_anchor_generator_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\anchor_generators\multiple_grid_anchor_generator.py" />
+    <Compile Include="detecting_roll_on_the_bed\anchor_generators\multiple_grid_anchor_generator_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\anchor_generators\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\faster_rcnn_box_coder.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\faster_rcnn_box_coder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\keypoint_box_coder.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\keypoint_box_coder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\mean_stddev_box_coder.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\mean_stddev_box_coder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\square_box_coder.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\square_box_coder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\box_coders\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\anchor_generator_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\anchor_generator_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\box_coder_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\box_coder_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\box_predictor_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\box_predictor_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\hyperparams_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\hyperparams_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\image_resizer_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\image_resizer_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\input_reader_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\input_reader_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\losses_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\losses_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\matcher_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\matcher_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\model_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\model_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\optimizer_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\optimizer_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\post_processing_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\post_processing_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\preprocessor_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\preprocessor_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\region_similarity_calculator_builder.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\region_similarity_calculator_builder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\builders\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\childdetect.py" />
+    <Compile Include="detecting_roll_on_the_bed\child_moving_1.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\anchor_generator.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\balanced_positive_negative_sampler.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\balanced_positive_negative_sampler_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\batcher.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\batcher_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\box_coder.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\box_coder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\box_list.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\box_list_ops.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\box_list_ops_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\box_list_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\box_predictor.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\box_predictor_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\data_decoder.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\keypoint_ops.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\keypoint_ops_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\losses.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\losses_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\matcher.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\matcher_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\minibatch_sampler.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\minibatch_sampler_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\model.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\post_processing.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\post_processing_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\prefetcher.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\prefetcher_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\preprocessor.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\preprocessor_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\region_similarity_calculator.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\region_similarity_calculator_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\standard_fields.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\target_assigner.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\target_assigner_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\core\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\create_pascal_tf_record.py" />
+    <Compile Include="detecting_roll_on_the_bed\create_pascal_tf_record_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\create_pet_tf_record.py" />
+    <Compile Include="detecting_roll_on_the_bed\data_decoders\tf_example_decoder.py" />
+    <Compile Include="detecting_roll_on_the_bed\data_decoders\tf_example_decoder_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\data_decoders\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\eval.py" />
+    <Compile Include="detecting_roll_on_the_bed\evaluator.py" />
+    <Compile Include="detecting_roll_on_the_bed\eval_util.py" />
+    <Compile Include="detecting_roll_on_the_bed\exporter.py" />
+    <Compile Include="detecting_roll_on_the_bed\exporter_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\export_inference_graph.py" />
+    <Compile Include="detecting_roll_on_the_bed\matchers\argmax_matcher.py" />
+    <Compile Include="detecting_roll_on_the_bed\matchers\argmax_matcher_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\matchers\bipartite_matcher.py" />
+    <Compile Include="detecting_roll_on_the_bed\matchers\bipartite_matcher_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\matchers\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\meta_architectures\faster_rcnn_meta_arch.py" />
+    <Compile Include="detecting_roll_on_the_bed\meta_architectures\faster_rcnn_meta_arch_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\meta_architectures\faster_rcnn_meta_arch_test_lib.py" />
+    <Compile Include="detecting_roll_on_the_bed\meta_architectures\rfcn_meta_arch.py" />
+    <Compile Include="detecting_roll_on_the_bed\meta_architectures\rfcn_meta_arch_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\meta_architectures\ssd_meta_arch.py" />
+    <Compile Include="detecting_roll_on_the_bed\meta_architectures\ssd_meta_arch_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\meta_architectures\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\faster_rcnn_inception_resnet_v2_feature_extractor.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\faster_rcnn_inception_resnet_v2_feature_extractor_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\faster_rcnn_resnet_v1_feature_extractor.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\faster_rcnn_resnet_v1_feature_extractor_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\feature_map_generators.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\feature_map_generators_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\ssd_feature_extractor_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\ssd_inception_v2_feature_extractor.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\ssd_inception_v2_feature_extractor_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\ssd_mobilenet_v1_feature_extractor.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\ssd_mobilenet_v1_feature_extractor_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\models\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\RollOnBed.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\anchor_generator_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\argmax_matcher_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\bipartite_matcher_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\box_coder_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\box_predictor_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\eval_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\faster_rcnn_box_coder_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\faster_rcnn_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\grid_anchor_generator_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\hyperparams_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\image_resizer_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\input_reader_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\losses_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\matcher_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\mean_stddev_box_coder_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\model_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\optimizer_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\pipeline_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\post_processing_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\preprocessor_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\region_similarity_calculator_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\square_box_coder_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\ssd_anchor_generator_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\ssd_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\string_int_label_map_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\train_pb2.py" />
+    <Compile Include="detecting_roll_on_the_bed\protos\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\tensorflow_1.py" />
+    <Compile Include="detecting_roll_on_the_bed\train.py" />
+    <Compile Include="detecting_roll_on_the_bed\trainer.py" />
+    <Compile Include="detecting_roll_on_the_bed\trainer_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\category_util.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\category_util_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\dataset_util.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\dataset_util_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\label_map_util.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\label_map_util_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\learning_schedules.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\learning_schedules_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\metrics.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\metrics_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\np_box_list.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\np_box_list_ops.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\np_box_list_ops_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\np_box_list_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\np_box_ops.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\np_box_ops_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\object_detection_evaluation.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\object_detection_evaluation_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\ops.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\ops_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\per_image_evaluation.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\per_image_evaluation_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\shape_utils.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\shape_utils_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\static_shape.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\static_shape_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\test_utils.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\test_utils_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\variables_helper.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\variables_helper_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\visualization_utils.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\visualization_utils_test.py" />
+    <Compile Include="detecting_roll_on_the_bed\utils\__init__.py" />
+    <Compile Include="detecting_roll_on_the_bed\__init__.py" />
+    <Compile Include="PlayMode.py" />
+    <Compile Include="SleepMode.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="detecting_roll_on_the_bed\" />
+    <Folder Include="detecting_roll_on_the_bed\anchor_generators\" />
+    <Folder Include="detecting_roll_on_the_bed\box_coders\" />
+    <Folder Include="detecting_roll_on_the_bed\builders\" />
+    <Folder Include="detecting_roll_on_the_bed\core\" />
+    <Folder Include="detecting_roll_on_the_bed\data\" />
+    <Folder Include="detecting_roll_on_the_bed\data_decoders\" />
+    <Folder Include="detecting_roll_on_the_bed\g3doc\" />
+    <Folder Include="detecting_roll_on_the_bed\g3doc\img\" />
+    <Folder Include="detecting_roll_on_the_bed\matchers\" />
+    <Folder Include="detecting_roll_on_the_bed\meta_architectures\" />
+    <Folder Include="detecting_roll_on_the_bed\models\" />
+    <Folder Include="detecting_roll_on_the_bed\protos\" />
+    <Folder Include="detecting_roll_on_the_bed\protos\__pycache__\" />
+    <Folder Include="detecting_roll_on_the_bed\samples\" />
+    <Folder Include="detecting_roll_on_the_bed\samples\cloud\" />
+    <Folder Include="detecting_roll_on_the_bed\samples\configs\" />
+    <Folder Include="detecting_roll_on_the_bed\ssd_mobilenet_v1_coco_11_06_2017\" />
+    <Folder Include="detecting_roll_on_the_bed\test_images\" />
+    <Folder Include="detecting_roll_on_the_bed\utils\" />
+    <Folder Include="detecting_roll_on_the_bed\utils\__pycache__\" />
+    <Folder Include="crib_mode\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="detecting_roll_on_the_bed\anchor_generators\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\box_coders\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\builders\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\CONTRIBUTING.md" />
+    <Content Include="detecting_roll_on_the_bed\core\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\data\mscoco_label_map.pbtxt" />
+    <Content Include="detecting_roll_on_the_bed\data\pascal_label_map.pbtxt" />
+    <Content Include="detecting_roll_on_the_bed\data\pet_label_map.pbtxt" />
+    <Content Include="detecting_roll_on_the_bed\data_decoders\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\configuring_jobs.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\defining_your_own_model.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\detection_model_zoo.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\exporting_models.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\img\dogs_detections_output.jpg" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\img\example_cat.jpg" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\img\kites_detections_output.jpg" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\img\oxford_pet.png" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\img\tensorboard.png" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\img\tensorboard2.png" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\installation.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\preparing_inputs.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\running_locally.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\running_notebook.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\running_on_cloud.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\running_pets.md" />
+    <Content Include="detecting_roll_on_the_bed\g3doc\using_your_own_dataset.md" />
+    <Content Include="detecting_roll_on_the_bed\matchers\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\meta_architectures\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\models\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\naga.mp4" />
+    <Content Include="detecting_roll_on_the_bed\naga1.mp4" />
+    <Content Include="detecting_roll_on_the_bed\object_detection_tutorial.ipynb" />
+    <Content Include="detecting_roll_on_the_bed\protos\anchor_generator.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\argmax_matcher.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\bipartite_matcher.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\box_coder.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\box_predictor.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\protos\eval.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\faster_rcnn.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\faster_rcnn_box_coder.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\grid_anchor_generator.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\hyperparams.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\image_resizer.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\input_reader.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\losses.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\matcher.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\mean_stddev_box_coder.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\model.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\optimizer.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\pipeline.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\post_processing.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\preprocessor.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\region_similarity_calculator.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\square_box_coder.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\ssd.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\ssd_anchor_generator.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\string_int_label_map.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\train.proto" />
+    <Content Include="detecting_roll_on_the_bed\protos\__pycache__\string_int_label_map_pb2.cpython-36.pyc" />
+    <Content Include="detecting_roll_on_the_bed\protos\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="detecting_roll_on_the_bed\README.md" />
+    <Content Include="detecting_roll_on_the_bed\samples\cloud\cloud.yml" />
+    <Content Include="detecting_roll_on_the_bed\samples\configs\faster_rcnn_inception_resnet_v2_atrous_pets.config" />
+    <Content Include="detecting_roll_on_the_bed\samples\configs\faster_rcnn_resnet101_pets.config" />
+    <Content Include="detecting_roll_on_the_bed\samples\configs\faster_rcnn_resnet101_voc07.config" />
+    <Content Include="detecting_roll_on_the_bed\samples\configs\faster_rcnn_resnet152_pets.config" />
+    <Content Include="detecting_roll_on_the_bed\samples\configs\faster_rcnn_resnet50_pets.config" />
+    <Content Include="detecting_roll_on_the_bed\samples\configs\rfcn_resnet101_pets.config" />
+    <Content Include="detecting_roll_on_the_bed\samples\configs\ssd_inception_v2_pets.config" />
+    <Content Include="detecting_roll_on_the_bed\samples\configs\ssd_mobilenet_v1_pets.config" />
+    <Content Include="detecting_roll_on_the_bed\ssd_mobilenet_v1_coco_11_06_2017\frozen_inference_graph.pb" />
+    <Content Include="detecting_roll_on_the_bed\tensorflow_1.pyproj" />
+    <Content Include="detecting_roll_on_the_bed\test2.mp4" />
+    <Content Include="detecting_roll_on_the_bed\test_images\image1.jpg" />
+    <Content Include="detecting_roll_on_the_bed\test_images\image2.jpg" />
+    <Content Include="detecting_roll_on_the_bed\test_images\image_info.txt" />
+    <Content Include="detecting_roll_on_the_bed\utils\BUILD" />
+    <Content Include="detecting_roll_on_the_bed\utils\__pycache__\label_map_util.cpython-36.pyc" />
+    <Content Include="detecting_roll_on_the_bed\utils\__pycache__\visualization_utils.cpython-36.pyc" />
+    <Content Include="detecting_roll_on_the_bed\utils\__pycache__\__init__.cpython-36.pyc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
