@@ -1,21 +1,22 @@
 import PlayMode as pm 
-import SleepMode as sm
 from detecting_roll_on_the_bed import RollOnBed
 import CribMode as cm
+import  bk_SleepMode as sm
 import _thread
+
 
 def menu():
     while True:
         option = 0
         option = input(" 1. Play Mode\n 2. Sleeping Mode\n 3.Roll On The Bed\n 4.Crib Mode \n Choose Your Option: " )
-    
+        
         if (option=='1'):
             
             _thread.start_new_thread(pm.play_Mode(),())
 
         elif (option =='2'):
-            
-            _thread.start_new_thread(sm.sleep_Mode(),())
+            print(option)
+            sm.sleep_Mode()
 
         elif (option =='3'):
             
@@ -27,7 +28,7 @@ def menu():
             _thread.start_new_thread(cm.crib_Mode(),())
         else:
             print("not correct")
-
+        print("Option Seleted")
 
 def _main():
     _thread.start_new_thread(menu,())

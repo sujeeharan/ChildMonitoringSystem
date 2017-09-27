@@ -365,6 +365,10 @@ def visualize_boxes_and_labels_on_image_array(image,
   box_to_instance_masks_map = {}
   box_to_keypoints_map = collections.defaultdict(list)
   score= 0
+  left = 0 
+  right= 0
+  top=0
+  bottom=0
 
   if not max_boxes_to_draw:
     max_boxes_to_draw = boxes.shape[0]

@@ -21,7 +21,7 @@ SleepMode ='y'
 
 #ap = argparse.ArgumentParser()
 #ap.add_argument("-v", "--video", help="path to the video file")
-video=None
+video="sample_videos/5.mp4"
 #ap.add_argument("-a", "--min-area", type=int, default=500, help="minimum area size")
 min_area=500
 #args = vars(ap.parse_args())
@@ -246,11 +246,6 @@ while True:
                      print("alarm ring and alarm val =",alarm)
                              
 
-           
-             
-
-
-   
 
     cv2.putText(frame, datetime.datetime.now().strftime("%A %d %B %Y %I:%M:%S%p"),
                 (10, frame.shape[0] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 0, 255), 1)

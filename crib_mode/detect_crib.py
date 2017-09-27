@@ -118,7 +118,7 @@ def crib_detector(raw_image):
             print(coordinatedic_dic_param)
             plt.figure(figsize=IMAGE_SIZE)
             plt.imshow(image_np)
-            cv2.imshow('object',cv2.resize(image_np,(800,600)))
+            #cv2.imshow('object',cv2.resize(image_np,(480,600)))
             if cv2.waitKey(25) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()
             
