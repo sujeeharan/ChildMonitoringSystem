@@ -16,7 +16,7 @@ def menu():
 
         elif (option =='2'):
             print(option)
-            sm.sleep_Mode()
+            _thread.start_new_thread(sm.sleep_Mode())
 
         elif (option =='3'):
             

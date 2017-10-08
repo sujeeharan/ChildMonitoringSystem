@@ -9,7 +9,7 @@ import imutils
 
 def crib_Mode():
     print('Entering Crib Mode')
-    cap = cv2.VideoCapture('sample_videos/5.mp4')
+    cap = cv2.VideoCapture(0)
     firstframe = None
     ret,frame = cap.read()
     x=frame.size
@@ -39,7 +39,7 @@ def crib_Mode():
         cv2.rectangle(frame,(round(left),round(top)),(round(right),round(bottom)),(0,0,255),2)
 
         #Boundry Calculation
-        cribmidpoint = round((bottom - top)/2)
+        cribmidpoint = round((bottom - top)/2)+round(top)
 
         #Drawing Boundries
         cv2.rectangle(frame,(round(left),round(top)),(round(right),round(bottom)),(0,0,255),2)
@@ -64,24 +64,26 @@ def crib_Mode():
             for (ub_x,ub_y,ub_w,ub_h) in upperbody:
                 cv2.rectangle(frame,(ub_x,ub_y),(ub_x+ub_w,ub_y+ub_h),(255,0,0),2)
 
-            if( y<top ):
+            if( x<top ):
                 safe = False
-                print ("Child in Danger Area")
+                print ("Child in Safe Area")
                 
                 safecount = safecount+1
                 dangercount=0
             else:
                 safe = True
-                print ("Child in Safe Area")
+                
+                print ("Child in Danger Area")
                 dangercount = dangercount +1
                 safecount=0
             
-            if dangercount ==5:
+            if dangercount ==2:
                 winsound.Beep(5000,2000)
 
             if (x < cribmidpoint):
                 print("is Child inside Crib?") 
             
         cv2.imshow('Image',frame)
+        cv2.imwrite('test2.jpg',frame)
         if cv2.waitKey(5) == 27:
             break

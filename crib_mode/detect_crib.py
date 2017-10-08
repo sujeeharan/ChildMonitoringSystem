@@ -118,6 +118,7 @@ def crib_detector(raw_image):
             print(coordinatedic_dic_param)
             plt.figure(figsize=IMAGE_SIZE)
             plt.imshow(image_np)
+            cv2.imwrite('test.jpg',image_np)
             #cv2.imshow('object',cv2.resize(image_np,(480,600)))
             if cv2.waitKey(25) & 0xFF == ord('q'):
                 cv2.destroyAllWindows()
@@ -135,11 +136,11 @@ def run_detection(frame):
     bottom=0
     status=False
     (left,right,top,bottom,score)=crib_detector(imagetorundetection)
-    if score >=80:
+    if score >=95:
         print('detection Complete')
         status = True
         print(status)
-    elif score <80:
+    elif score <95:
         print('change position')
 
     return (left,right,top,bottom,status)
