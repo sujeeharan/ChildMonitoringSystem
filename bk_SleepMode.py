@@ -19,7 +19,7 @@ def sleep_Mode():
 
     #ap = argparse.ArgumentParser()
     #ap.add_argument("-v", "--video", help="path to the video file")
-    video="sample_videos/test2.mp4"
+    video="sample_videos/test.mp4"
     #ap.add_argument("-a", "--min-area", type=int, default=500, help="minimum area size")
     min_area=500
     #args = vars(ap.parse_args())

@@ -9,7 +9,7 @@ import imutils
 
 def crib_Mode():
     print('Entering Crib Mode')
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture('Sample_Videos/5.mp4')
     firstframe = None
     ret,frame = cap.read()
     x=frame.size
@@ -26,7 +26,7 @@ def crib_Mode():
         #frame = imutils.resize(frame,width=480)
         while status == False:
             ret, frame = cap.read()
-            cv2.imwrite('test_images/cribtes.jpg',frame)
+            cv2.imwrite('test_images/cribtes.jpg',frame) 
             (left,right,top,bottom,status)=dc.run_detection(frame)
             print(status)
             firstframe = frame

@@ -11,7 +11,6 @@ def menu():
         option = input(" 1. Play Mode\n 2. Sleeping Mode\n 3.Roll On The Bed\n 4.Crib Mode \n Choose Your Option: " )
         
         if (option=='1'):
-            
             _thread.start_new_thread(pm.play_Mode(),())
 
         elif (option =='2'):
