@@ -23,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Baby_Monitoring_System.py" />
+    <Compile Include="bk_SleepMode.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CribMode.py">
       <SubType>Code</SubType>
     </Compile>
@@ -215,7 +218,6 @@
     <Compile Include="detecting_roll_on_the_bed\utils\__init__.py" />
     <Compile Include="detecting_roll_on_the_bed\__init__.py" />
     <Compile Include="PlayMode.py" />
-    <Compile Include="SleepMode.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="detecting_roll_on_the_bed\" />

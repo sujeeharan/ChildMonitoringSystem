@@ -5,10 +5,11 @@ from math import atan2, pi
 from numpy.random import rand
 from math import sin, cos, pi
 import math
+import winsound
 
 def play_Mode():
     print('Entering Play Mode')
-    vid= cv2.VideoCapture('Sample_Videos/sleepMode.mp4')
+    vid= cv2.VideoCapture(0)
 
     firstframe= None
 
@@ -57,6 +58,7 @@ def play_Mode():
             if (angle_deg<90.000):
                 safe=False
                 print("Danger")
+                winsound.Beep(2500,1000)
             else :
                 safe=True
                 print("Safe")
